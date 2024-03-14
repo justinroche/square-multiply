@@ -6,20 +6,20 @@
 
     // Obtain modular exponentiation values.
     Console.WriteLine("Enter the base number: ");
-    int baseNumber = int.Parse(Console.ReadLine());
+    long baseNumber = long.Parse(Console.ReadLine());
     Console.WriteLine("Enter the exponent: ");
-    int exponent = int.Parse(Console.ReadLine());
+    long exponent = long.Parse(Console.ReadLine());
     Console.WriteLine("Enter the modulo: ");
-    int modulo = int.Parse(Console.ReadLine());
+    long modulo = long.Parse(Console.ReadLine());
 
     // Compute and print result.
-    int result = RunSquareMultiply(baseNumber, exponent, modulo);
+    long result = RunSquareMultiply(baseNumber, exponent, modulo);
     Console.WriteLine("Result: " + result);
   }
 
-  static int RunSquareMultiply(int baseNumber, int exponent, int modulo)
+  static long RunSquareMultiply(long baseNumber, long exponent, long modulo)
   {
-    int result = 1;
+    long result = 1;
     string binaryExponent = Convert.ToString(exponent, 2);
 
     Console.WriteLine("Exponent (" + exponent + ") in binary: " + binaryExponent);
